@@ -7,11 +7,8 @@ import java.util.Scanner;
 import java.util.logging.*;
 import jdo.*;
 
-import org.apache.logging.log4j.jul.ApiLogger;
 import stream.WriteStream;
 import db.SystemUsers;
-
-import com.fasterxml.jackson.core.JsonProcessingException;
 
 
 public class Main {
@@ -26,7 +23,7 @@ public class Main {
         }
     }
 
-    public static void main(String args[]) throws JsonProcessingException {
+    public static void main(String args[]){
         LOGGER.log(Level.INFO,"\nПриложение запущено.");
 
         LOGGER.log(Level.INFO,"Создание локальных данных для работы приложения...");
