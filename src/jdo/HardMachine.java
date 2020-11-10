@@ -32,4 +32,8 @@ public class HardMachine extends Machine implements java.io.Serializable {
                 "\t\tРазрешено движение: "+this.radio.status+"\t\tВес: "+this.weight+"\t\tВысота: "+this.height);
     }
 
+    public void show(){
+        System.out.format("%12s %17d %15.2f %14b %5d %9d", getMark(), getMaxSpeed(), getRadio().currentStation, getRadio().status,getHeight(),getWeight());
+        System.out.println();
+    }
 }

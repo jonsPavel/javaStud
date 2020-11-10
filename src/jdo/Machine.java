@@ -56,5 +56,10 @@ public class Machine implements java.io.Serializable{
         return ("Марка: "+ this.mark+"\t\tСкорость: " + this.maxSpeed+"\t\tРадио: "+ this.radio.currentStation+ "\t\tРазрешено движение: "+this.radio.status);
     }
 
+    public void show(){
+        System.out.format("%12s %17d %15.2f %14b ", getMark(), getMaxSpeed(), getRadio().currentStation, getRadio().status);
+        System.out.println();
+    }
+
 
 }
