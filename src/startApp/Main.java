@@ -35,7 +35,6 @@ public class Main {
         ArrayList<HardMachine> hardMachineList=new ArrayList<>();//создание списка грузовых машин
 
 
-
         try{
             LOGGER.log(Level.INFO,"Загружаем сохранённые данные...");
             machineList = iS.inStreamMachine();//список из бинарника }
