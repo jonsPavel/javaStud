@@ -6,12 +6,12 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Property {
+public class updatedProperties {
     FileInputStream fis;
-    String defUser = "Пользователь";
+    protected String defUser = "Пользователь";
     protected Properties property = new Properties();
 
-    public Property(Logger LOGGER){
+    public updatedProperties(Logger LOGGER){
         try {
             fis = new FileInputStream("C:\\Users\\Asus\\IdeaProjects\\Start\\src\\logging\\config.properties");
             property.load(fis);
@@ -22,8 +22,8 @@ public class Property {
             LOGGER.log(Level.WARNING,"Ошибка загрузки файла конфигурации.\n"+e);
         }
     }
-
-    public Properties getProperties(){
-        return property;
+    public String getDefUser(){
+        return defUser;
     }
+
 }

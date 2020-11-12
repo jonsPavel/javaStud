@@ -14,10 +14,8 @@ public class WriteStream implements java.io.Serializable{
 //    String fileMachines = "./db/machines.dat";
 //    String fileHardMachines = "./db/hardMachines.dat";
 
-    
     ArrayList<Machine> machineList;//создание нового списка
     ArrayList<HardMachine> hardMachineList;//создание нового списка
-
 
 
     public WriteStream(ArrayList<HardMachine> hardMachineList,ArrayList<Machine> machineList) {

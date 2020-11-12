@@ -1,12 +1,11 @@
 package controller;
 
-import logging.Log;
 import db.SystemUsers;
 import jdo.HardMachine;
 import jdo.InputMachines;
 import jdo.Machine;
 import stream.WriteStream;
-import db.SystemUsers;
+
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.logging.Level;

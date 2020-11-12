@@ -6,12 +6,9 @@ import jdo.HardMachine;
 import jdo.Machine;
 import stream.WriteStream;
 import controller.MenuCases;
-import logging.Property;
+import logging.updatedProperties;
 
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Properties;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,14 +16,17 @@ import java.util.logging.Logger;
 public class Menu {
 
     static Logger LOGGER;
-    private Properties property;
-    public Menu(Logger LOGGER,Properties property){
+    protected updatedProperties property;
+
+    public Menu(Logger LOGGER,updatedProperties property){
         this.LOGGER = LOGGER;
         this.property = property;
     }
 
-    public static void mainMenu()  {
+
+    public void mainMenu()  {
         String defUser="Пользователь";
+
         LOGGER.log(Level.INFO,"\nПриложение запущено.");
 
         LOGGER.log(Level.INFO,"Создание локальных данных для работы приложения...");
@@ -40,12 +40,13 @@ public class Menu {
         SystemUsers sU = new SystemUsers(); // проверка пользователя
         LOGGER.log(Level.INFO,"Передача управления системе входа...");
         sU.logIn();
+
         if(sU.getAccessModifier()==0){
             LOGGER.log(Level.INFO,"Неудачная попытка авторизации.");
             System.exit(0);
         }
 
-        LOGGER.log(Level.INFO,"Добро пожаловать, "+ defUser +"\nМодификатор доступа: "+sU.getAccessModifier());
+        LOGGER.log(Level.INFO,"Добро пожаловать, "+ property.getDefUser() +"\nМодификатор доступа: "+sU.getAccessModifier());
 
         // создание переменных для пользования программой
         int switchCase;
