@@ -1,0 +1,254 @@
+нояб. 10, 2020 10:02:59 PM startApp.Main main
+INFO: Ошибка загрузки файла конфигурации.
+java.io.FileNotFoundException: C:\Users\Asus\IdeaProjects\Start\src\logging\config.properties (Не удается найти указанный файл)
+нояб. 10, 2020 10:02:59 PM startApp.Main main
+INFO: 
+Приложение запущено.
+нояб. 10, 2020 10:02:59 PM startApp.Main main
+INFO: Создание локальных данных для работы приложения...
+нояб. 10, 2020 10:02:59 PM startApp.Main main
+INFO: Передача управления системе входа...
+нояб. 10, 2020 10:06:54 PM startApp.Main main
+INFO: 
+Приложение запущено.
+нояб. 10, 2020 10:06:54 PM startApp.Main main
+INFO: Создание локальных данных для работы приложения...
+нояб. 10, 2020 10:06:54 PM startApp.Main main
+INFO: Передача управления системе входа...
+нояб. 10, 2020 10:07:07 PM startApp.Main main
+INFO: Добро пожаловать, Pasha
+Модификатор доступа: 1
+нояб. 10, 2020 10:07:09 PM startApp.Main main
+INFO: Пользование программой завершено.
+
+
+нояб. 10, 2020 10:10:17 PM startApp.Main main
+INFO: 
+Приложение запущено.
+нояб. 10, 2020 10:10:17 PM startApp.Main main
+INFO: Создание локальных данных для работы приложения...
+нояб. 10, 2020 10:10:17 PM startApp.Main main
+INFO: Передача управления системе входа...
+нояб. 10, 2020 10:10:30 PM startApp.Main main
+INFO: Добро пожаловать, Pasha
+Модификатор доступа: 1
+нояб. 10, 2020 10:10:40 PM startApp.Main main
+INFO: Загружаем сохранённые данные...
+нояб. 10, 2020 10:10:40 PM startApp.Main main
+INFO: Данные успешно загружены.
+нояб. 10, 2020 10:10:54 PM startApp.Main main
+INFO: Начато создание новой записи
+нояб. 10, 2020 10:11:15 PM startApp.Main main
+INFO: Начато создание новой записи
+нояб. 10, 2020 10:11:34 PM startApp.Main main
+WARNING: Данные ЗАПИСАНЫ
+нояб. 10, 2020 10:11:37 PM startApp.Main main
+INFO: Сеанс завершён.
+
+
+нояб. 10, 2020 10:12:25 PM startApp.Main main
+INFO: 
+Приложение запущено.
+нояб. 10, 2020 10:12:25 PM startApp.Main main
+INFO: Создание локальных данных для работы приложения...
+нояб. 10, 2020 10:12:25 PM startApp.Main main
+INFO: Передача управления системе входа...
+нояб. 10, 2020 10:12:30 PM startApp.Main main
+INFO: Добро пожаловать, Pasha
+Модификатор доступа: 1
+нояб. 10, 2020 10:12:52 PM startApp.Main main
+INFO: Загружаем сохранённые данные...
+нояб. 10, 2020 10:12:52 PM startApp.Main main
+INFO: Данные успешно загружены.
+нояб. 10, 2020 10:13:03 PM startApp.Main main
+INFO: Сеанс завершён.
+
+
+нояб. 12, 2020 9:13:53 AM startApp.Main main
+INFO: 
+Приложение запущено.
+нояб. 12, 2020 9:13:53 AM startApp.Main main
+INFO: Создание локальных данных для работы приложения...
+нояб. 12, 2020 9:13:53 AM startApp.Main main
+INFO: Передача управления системе входа...
+нояб. 12, 2020 9:14:15 AM startApp.Main main
+INFO: Добро пожаловать, Pasha
+Модификатор доступа: 1
+нояб. 12, 2020 9:14:34 AM startApp.Main main
+INFO: Загружаем сохранённые данные...
+нояб. 12, 2020 9:14:34 AM startApp.Main main
+INFO: Данные успешно загружены.
+нояб. 12, 2020 9:15:29 AM startApp.Main main
+INFO: Сеанс завершён.
+
+
+нояб. 12, 2020 9:44:13 AM startApp.Main main
+INFO: 
+Приложение запущено.
+нояб. 12, 2020 9:44:13 AM startApp.Main main
+INFO: Создание локальных данных для работы приложения...
+нояб. 12, 2020 9:44:13 AM startApp.Main main
+INFO: Передача управления системе входа...
+нояб. 12, 2020 9:44:32 AM startApp.Main main
+INFO: Добро пожаловать, Pasha
+Модификатор доступа: 3
+нояб. 12, 2020 9:44:40 AM startApp.Main main
+INFO: Загружаем сохранённые данные...
+нояб. 12, 2020 9:44:40 AM startApp.Main main
+INFO: Данные успешно загружены.
+нояб. 12, 2020 9:46:23 AM startApp.Main main
+INFO: 
+Приложение запущено.
+нояб. 12, 2020 9:46:23 AM startApp.Main main
+INFO: Создание локальных данных для работы приложения...
+нояб. 12, 2020 9:46:23 AM startApp.Main main
+INFO: Передача управления системе входа...
+нояб. 12, 2020 9:46:33 AM startApp.Main main
+INFO: Добро пожаловать, Pasha
+Модификатор доступа: 3
+нояб. 12, 2020 9:46:39 AM startApp.Main main
+INFO: Загружаем сохранённые данные...
+нояб. 12, 2020 9:46:39 AM startApp.Main main
+INFO: Данные успешно загружены.
+нояб. 12, 2020 9:47:03 AM startApp.Main main
+WARNING: Попытка записи непривелегированным пользователем
+нояб. 12, 2020 9:59:14 AM startApp.Main main
+INFO: 
+Приложение запущено.
+нояб. 12, 2020 9:59:14 AM startApp.Main main
+INFO: Создание локальных данных для работы приложения...
+нояб. 12, 2020 9:59:14 AM startApp.Main main
+INFO: Передача управления системе входа...
+нояб. 12, 2020 9:59:22 AM startApp.Main main
+INFO: Добро пожаловать, Pasha
+Модификатор доступа: 3
+нояб. 12, 2020 9:59:39 AM startApp.Main main
+INFO: Загружаем сохранённые данные...
+нояб. 12, 2020 9:59:39 AM startApp.Main main
+INFO: Данные успешно загружены.
+нояб. 12, 2020 9:59:40 AM startApp.Main main
+WARNING: Попытка записи непривелегированным пользователем
+нояб. 12, 2020 9:59:44 AM startApp.Main main
+INFO: Сеанс завершён.
+
+
+нояб. 12, 2020 11:29:38 AM startApp.Main main
+INFO: 
+Приложение запущено.
+нояб. 12, 2020 11:29:39 AM startApp.Main main
+INFO: Создание локальных данных для работы приложения...
+нояб. 12, 2020 11:29:39 AM startApp.Main main
+INFO: Передача управления системе входа...
+нояб. 12, 2020 11:29:45 AM startApp.Main main
+INFO: Добро пожаловать, Pasha
+Модификатор доступа: 1
+нояб. 12, 2020 11:29:50 AM startApp.Main main
+INFO: Загружаем сохранённые данные...
+нояб. 12, 2020 11:29:50 AM startApp.Main main
+INFO: Данные успешно загружены.
+нояб. 12, 2020 11:29:53 AM startApp.Main main
+INFO: Сеанс завершён.
+
+
+нояб. 12, 2020 2:59:59 PM view.Menu mainMenu
+INFO: 
+Приложение запущено.
+нояб. 12, 2020 2:59:59 PM view.Menu mainMenu
+INFO: Создание локальных данных для работы приложения...
+нояб. 12, 2020 2:59:59 PM view.Menu mainMenu
+INFO: Передача управления системе входа...
+нояб. 12, 2020 3:00:11 PM view.Menu mainMenu
+INFO: Добро пожаловать, Pasha
+Модификатор доступа: 1
+нояб. 12, 2020 3:00:16 PM view.Menu mainMenu
+INFO: Сеанс завершён.
+
+
+нояб. 12, 2020 4:59:49 PM view.Menu mainMenu
+INFO: 
+Приложение запущено.
+нояб. 12, 2020 4:59:49 PM view.Menu mainMenu
+INFO: Создание локальных данных для работы приложения...
+нояб. 12, 2020 4:59:49 PM view.Menu mainMenu
+INFO: Передача управления системе входа...
+нояб. 12, 2020 4:59:57 PM view.Menu mainMenu
+INFO: Добро пожаловать, Pasha
+Модификатор доступа: 1
+нояб. 12, 2020 5:00:00 PM controller.MenuCases case1
+INFO: Начато создание новой записи
+нояб. 12, 2020 5:00:35 PM view.Menu mainMenu
+INFO: Сеанс завершён.
+
+
+нояб. 12, 2020 5:01:06 PM view.Menu mainMenu
+INFO: 
+Приложение запущено.
+нояб. 12, 2020 5:01:06 PM view.Menu mainMenu
+INFO: Создание локальных данных для работы приложения...
+нояб. 12, 2020 5:01:06 PM view.Menu mainMenu
+INFO: Передача управления системе входа...
+нояб. 12, 2020 5:01:10 PM view.Menu mainMenu
+INFO: Добро пожаловать, Pasha
+Модификатор доступа: 1
+нояб. 12, 2020 5:01:15 PM controller.MenuCases case1
+INFO: Начато создание новой записи
+нояб. 12, 2020 5:01:41 PM view.Menu mainMenu
+INFO: Сеанс завершён.
+
+
+нояб. 12, 2020 5:25:10 PM view.Menu mainMenu
+INFO: 
+Приложение запущено.
+нояб. 12, 2020 5:25:11 PM view.Menu mainMenu
+INFO: Создание локальных данных для работы приложения...
+нояб. 12, 2020 5:25:11 PM view.Menu mainMenu
+INFO: Передача управления системе входа...
+нояб. 12, 2020 5:25:22 PM view.Menu mainMenu
+INFO: Добро пожаловать, Пользователь
+Модификатор доступа: 1
+нояб. 12, 2020 5:25:33 PM controller.MenuCases case1
+INFO: Начато создание новой записи
+нояб. 12, 2020 5:26:01 PM controller.MenuCases case1
+INFO: Начато создание новой записи
+нояб. 12, 2020 5:26:22 PM controller.MenuCases case4
+WARNING: Данные ЗАПИСАНЫ
+нояб. 12, 2020 5:26:28 PM view.Menu mainMenu
+INFO: Сеанс завершён.
+
+
+нояб. 12, 2020 5:26:33 PM view.Menu mainMenu
+INFO: 
+Приложение запущено.
+нояб. 12, 2020 5:26:33 PM view.Menu mainMenu
+INFO: Создание локальных данных для работы приложения...
+нояб. 12, 2020 5:26:33 PM view.Menu mainMenu
+INFO: Передача управления системе входа...
+нояб. 12, 2020 5:26:37 PM view.Menu mainMenu
+INFO: Добро пожаловать, Пользователь
+Модификатор доступа: 1
+нояб. 12, 2020 5:26:42 PM controller.MenuCases case3
+INFO: Загружаем сохранённые данные...
+нояб. 12, 2020 5:26:42 PM controller.MenuCases case3
+INFO: Данные успешно загружены.
+нояб. 12, 2020 5:26:58 PM view.Menu mainMenu
+INFO: Сеанс завершён.
+
+
+нояб. 12, 2020 5:34:50 PM view.Menu mainMenu
+INFO: 
+Приложение запущено.
+нояб. 12, 2020 5:34:50 PM view.Menu mainMenu
+INFO: Создание локальных данных для работы приложения...
+нояб. 12, 2020 5:34:50 PM view.Menu mainMenu
+INFO: Передача управления системе входа...
+нояб. 12, 2020 5:34:56 PM view.Menu mainMenu
+INFO: Добро пожаловать, Пользователь
+Модификатор доступа: 1
+нояб. 12, 2020 5:34:59 PM controller.MenuCases case3
+INFO: Загружаем сохранённые данные...
+нояб. 12, 2020 5:34:59 PM controller.MenuCases case3
+INFO: Данные успешно загружены.
+нояб. 12, 2020 5:35:20 PM view.Menu mainMenu
+INFO: Сеанс завершён.
+
+
