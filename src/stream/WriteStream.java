@@ -25,15 +25,10 @@ public class WriteStream implements java.io.Serializable{
         this.machineList = machineList;
     }
 
-//    public WriteStream(ArrayList<Machine> MachineList) {
-//        this.machineList = MachineList;
-//    }
-
     public WriteStream() {
         this.machineList = machineList;
         this.hardMachineList = hardMachineList;
     }
-
 
 
     public void outStreamMachines(){
@@ -55,8 +50,6 @@ public class WriteStream implements java.io.Serializable{
             System.out.println(ex.getMessage());
         }
     }
-
-
 
 
     public ArrayList<Machine> inStreamMachine (){
