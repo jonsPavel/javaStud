@@ -87,6 +87,13 @@ public class MenuCases {
     public ArrayList<HardMachine> getHardMachineList() {
         return hardMachineList;
     }
+    public LinkedList<Machine> getLinkedMachineList() {
+        return linkedMachineList;
+    }
+    public LinkedList<HardMachine> getHardMachineLinkedList() {
+        return linkedHardMachineList;
+    }
+
 
     public void case4() {
         if (sU.getAccessModifier() == 1 || sU.getAccessModifier() == 2) {

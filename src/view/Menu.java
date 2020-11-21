@@ -77,6 +77,8 @@ public class Menu {
                     mC.case3();
                     machineList = mC.getMachineList();
                     hardMachineList = mC.getHardMachineList();
+                    linkedHardMachineList= mC.getHardMachineLinkedList();
+                    linkedMachineList = mC.getLinkedMachineList();
                     break;
 
                 case (4):
