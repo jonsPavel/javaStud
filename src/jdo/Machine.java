@@ -61,5 +61,8 @@ public class Machine implements java.io.Serializable{
         System.out.println();
     }
 
-
+    public static Machine generateRandomElement(){
+        Machine hm =new Machine("Lada",(int) (Math.random() * 250), (Math.random() * 120),true);
+        return hm;
+    }
 }

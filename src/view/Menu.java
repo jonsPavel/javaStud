@@ -8,7 +8,8 @@ import stream.WriteStream;
 import controller.MenuCases;
 import logging.updatedProperties;
 
-import java.util.ArrayList;
+
+import java.util.*;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -36,6 +37,8 @@ public class Menu {
         ArrayList<Machine> machineList = new ArrayList<Machine>();//создание списка машин
         ArrayList<HardMachine> hardMachineList=new ArrayList<>();//создание списка грузовых машин
 
+        LinkedList linkedMachineList= new LinkedList(machineList);
+        LinkedList linkedHardMachineList= new LinkedList(hardMachineList); // создание линкованных листов
 
         SystemUsers sU = new SystemUsers(); // проверка пользователя
         LOGGER.log(Level.INFO,"Передача управления системе входа...");
@@ -57,13 +60,7 @@ public class Menu {
         while (true) {
             if (exit)
                 break;
-            System.out.println("\n1. Продолжить запись");
-            System.out.println("2. Вывести все машины");
-            System.out.println("3. Прочесть данные из файла");
-            System.out.println("4. Записать данные в файл");
-            System.out.println("5. Удалить записи о машине");
-            System.out.println("");
-            System.out.println("0. Выйти");
+          ShowMachines.showMenu();
 
             switchCase = in.nextInt();
 
@@ -73,7 +70,7 @@ public class Menu {
                     break;
 
                 case (2):
-                    showMachines(machineList,hardMachineList);
+                    ShowMachines.showMachines(machineList,hardMachineList);
                     break;
 
                 case (3):
@@ -87,8 +84,23 @@ public class Menu {
                     break;
 
                 case (5):
-                    showMachines(machineList,hardMachineList);
+                    ShowMachines.showMachines(machineList,hardMachineList);
                     mC.case5();
+                    break;
+                case (6):
+                    mC.generateNewElement(linkedMachineList,linkedHardMachineList);
+                    break;
+                case (7):
+                    mC.showLinkedMachines(linkedMachineList,linkedHardMachineList);
+                    break;
+                case (8):
+                    mC.generateNewElementToArray(machineList,hardMachineList);
+                    break;
+                case (9):
+                    mC.generateArrayListElements(machineList,hardMachineList);
+                    break;
+                case (10):
+                    mC.generateLinkedListElements(linkedMachineList,linkedHardMachineList);
                     break;
 
                 case (0):
@@ -100,31 +112,5 @@ public class Menu {
             }
         }
         LOGGER.log(Level.INFO,"Сеанс завершён.\n\n");
-    }
-
-
-    //Далее идут методы для отображения.
-
-    static void showMachines(ArrayList<Machine> machineList, ArrayList<HardMachine> hardMachineList){
-        if(machineList.size()!=0){
-            System.out.println("Легковые машины:");
-            System.out.println("       Марка | макс. скорость |  радиостанция |  включено ли |");
-            for (int i =0;i<machineList.size();i++){
-                machineList.get(i).show();
-            }
-        }
-        else
-            System.out.println("\nНет записей о легковых машинах");
-
-
-        if(hardMachineList.size()!=0) {
-            System.out.println("\nГрузовые машины:");
-            System.out.println("       Марка | макс. скорость |  радиостанция |  включено ли | высота |   вес|");
-            for (int i = 0; i < hardMachineList.size(); i++) {
-                hardMachineList.get(i).show();
-            }
-        }
-        else
-            System.out.println("\nНет записей о грузовых машинах");
     }
 }
