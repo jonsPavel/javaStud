@@ -11,6 +11,7 @@ import java.util.*;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import logging.UserExceptions;
 
 
 public class MenuCases {
@@ -38,7 +39,7 @@ public class MenuCases {
     WriteStream iS = new WriteStream(); // для загрузки данных
     String defUser = "Пользователь";
 
-    public void case1() {
+    public void case1() throws UserExceptions {                     // метод case1 будет обязан завернуться в try/catch
         if (sU.getAccessModifier() == 1 || sU.getAccessModifier() == 2) { // проверка на пользователя
             LOGGER.log(Level.INFO, "Начато создание новой записи");
             System.out.println("Грузовой ли автомобиль вы хотите ввести?\n " + "1 - да, 0 - нет\n");
@@ -58,8 +59,8 @@ public class MenuCases {
                 linkedMachineList.add(m);                                                       // 4 lab
             }
         } else {
-            System.out.println(defUser + ", у вас нет прав на запись.");
             LOGGER.log(Level.WARNING, "Попытка записи непривелегированным пользователем");
+            throw new UserExceptions(sU.getAccessModifier());
         }
 
     }
@@ -95,7 +96,7 @@ public class MenuCases {
     }
 
 
-    public void case4() {
+    public void case4() throws UserExceptions {
         if (sU.getAccessModifier() == 1 || sU.getAccessModifier() == 2) {
             try {
                 WriteStream wS = new WriteStream(hardMachineList, machineList);
@@ -106,38 +107,49 @@ public class MenuCases {
                 LOGGER.log(Level.WARNING, "Неудачная попытка сериализации данных.\n Ошибка " + e);
             }
         } else {
-            System.out.println(defUser + ", у вас нет прав на запись.");
             LOGGER.log(Level.WARNING, "Попытка записи непривелегированным пользователем");
+            throw new UserExceptions(sU.getAccessModifier());
+
         }
     }
 
-    public void case5() {
-        System.out.println("Какую таблицу вы ходите изменить?\n1 - легковые, 2 - грузовые");
-        try{ switchCase = in.nextInt(); }
-        catch (Exception ex) { System.out.println("Неправильный ввод данных." + ex); }
+    public void case5() throws  UserExceptions {
+        if (sU.getAccessModifier() == 1 || sU.getAccessModifier() == 2) {
+            System.out.println("Какую таблицу вы ходите изменить?\n1 - легковые, 2 - грузовые");
+            try {
+                switchCase = in.nextInt();
+            } catch (Exception ex) {
+                System.out.println("Неправильный ввод данных." + ex);
+            }
 
-        switch (switchCase){
-            case(1):
-                System.out.println("Какую по счёту запись вы ходите удалить?");
-                try{ switchCase = in.nextInt();
-                    machineList.remove(switchCase-1);
-                    linkedMachineList.remove(switchCase-1);                                 // 4 lab
-                }
-                catch (Exception ex) { System.out.println("Неправильный ввод данных." + ex); }
-                break;
+            switch (switchCase) {
+                case (1):
+                    System.out.println("Какую по счёту запись вы ходите удалить?");
+                    try {
+                        switchCase = in.nextInt();
+                        machineList.remove(switchCase - 1);
+                        linkedMachineList.remove(switchCase - 1);                                 // 4 lab
+                    } catch (Exception ex) {
+                        System.out.println("Неправильный ввод данных." + ex);
+                    }
+                    break;
 
-            case(2):
-                System.out.println("Какую по счёту запись вы ходите удалить?");
-                try{ switchCase = in.nextInt();
-                    hardMachineList.remove(switchCase-1);
-                    linkedHardMachineList.remove(switchCase-1);                              // 4 lab
-                }
-                catch (Exception ex) { System.out.println("Неправильный ввод данных." + ex); }
-                break;
+                case (2):
+                    System.out.println("Какую по счёту запись вы ходите удалить?");
+                    try {
+                        switchCase = in.nextInt();
+                        hardMachineList.remove(switchCase - 1);
+                        linkedHardMachineList.remove(switchCase - 1);                              // 4 lab
+                    } catch (Exception ex) {
+                        System.out.println("Неправильный ввод данных." + ex);
+                    }
+                    break;
+            }
         }
-    }
-    public void showLinkedLists(){
-
+        else {
+            LOGGER.log(Level.INFO,defUser+" пытается удалить данные");
+            throw new UserExceptions(sU.getAccessModifier());
+        }
     }
 
     public void showLinkedMachines(LinkedList<Machine> machineList, LinkedList<HardMachine> hardMachineList){

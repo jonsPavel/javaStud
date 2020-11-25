@@ -4,6 +4,7 @@ import db.SystemUsers;
 import jdo.DPS;
 import jdo.HardMachine;
 import jdo.Machine;
+import logging.UserExceptions;
 import stream.WriteStream;
 import controller.MenuCases;
 import logging.updatedProperties;
@@ -15,7 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Menu {
-
+ //                     В основном тут выводит собщения только Логгер.
     static Logger LOGGER;
     protected updatedProperties property;
 
@@ -60,17 +61,22 @@ public class Menu {
         while (true) {
             if (exit)
                 break;
-          ShowMachines.showMenu();
+          Show.showMenu();
 
             switchCase = in.nextInt();
 
             switch (switchCase) {
                 case  (1):
-                    mC.case1();
+                    try {
+                        mC.case1();
+                    }
+                    catch (UserExceptions ex){
+                        System.out.println(ex);
+                    };
                     break;
 
                 case (2):
-                    ShowMachines.showMachines(machineList,hardMachineList);
+                        Show.showMachines(machineList,hardMachineList);
                     break;
 
                 case (3):
@@ -82,12 +88,22 @@ public class Menu {
                     break;
 
                 case (4):
-                    mC.case4();
-                    break;
+                    try {
+                        mC.case4();
+                    }
+                    catch (UserExceptions ex){
+                        System.out.println(ex);
+                    }
+                break;
 
                 case (5):
-                    ShowMachines.showMachines(machineList,hardMachineList);
-                    mC.case5();
+                    try {
+                        Show.showMachines(machineList,hardMachineList);
+                        mC.case5();
+                    }
+                    catch (UserExceptions ex){
+                        System.out.println(ex);
+                    }
                     break;
                 case (6):
                     mC.generateNewElement(linkedMachineList,linkedHardMachineList);
